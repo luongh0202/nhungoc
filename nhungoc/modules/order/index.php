@@ -3,6 +3,7 @@
     $stmt->execute();
     $Admins =  $stmt->fetchAll(PDO::FETCH_OBJ);
 ?>
+
 <!--Responsive table-->
 <div class="col-sm-12">
   <div class="panel panel-default panel-table">
