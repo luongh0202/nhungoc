@@ -1,0 +1,14 @@
+.products .thumbnail{
+
+}
+
+.sale-off{
+	background: green;
+	color: red;
+	width: 50px;
+	padding: 16px 0;
+	border-radius: 100%;
+	position: absolute;
+	top:0;
+	right: 0
+}
