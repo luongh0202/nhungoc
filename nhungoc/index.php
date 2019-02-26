@@ -45,9 +45,9 @@ include 'common/connect_db.php';
                 </li>
                 <li class="parent"><a href="#"><i class="icon mdi mdi-view-web"></i><span>Thống kê chưa hoàn thành</span></a>
                   <ul class="sub-menu">
-                    <li><a href="index.php?controller=danh-muc&view=them-moi">Số đơn hàng chưa order</a>
+                    <li><a href="index.php?controller=order-loading&view=them-moi">Số đơn hàng đang order</a>
                     </li>
-                    <li><a href="?controller=danh-muc">Số đơn hàng đã order</a>
+                    <li><a href="index.php?controller=order-loading&view=them-moi">Số đơn hàng đang ship</a>
                     </li>
                   </ul>
                 </li>

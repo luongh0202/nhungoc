@@ -10,7 +10,7 @@ USE `OrderNN`;
 DROP TABLE IF EXISTS `amdin`;
 CREATE TABLE IF NOT EXISTS `admin` (
   `id` int(11) AUTO_INCREMENT,
-  `name` text, --tên
+  `name` text, -- tên
   `address` text, -- địa chỉ
   `code` text, -- mã sản phẩm
   `size` text, -- kích cỡ
