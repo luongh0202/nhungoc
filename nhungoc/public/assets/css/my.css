@@ -1,0 +1,20 @@
+.xyz {
+    float: left;
+    width: 80%;
+}
+.abc {
+    width: 20%;
+    float: left;
+    text-align: left;
+    margin-bottom: 0;
+    padding-top: 11px;
+}
+.table_all {
+	padding: 0 !important;
+}
+.dataTables_wrapper .dataTables_length {
+	margin-left: 21px;
+}
+.dataTables_wrapper .dataTables_length select {
+	margin-left: 20px;
+}

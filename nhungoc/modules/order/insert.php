@@ -38,7 +38,7 @@
           </div>
           <div class="col-sm-4">
             <select class="form-control">
-              <option>1</option>
+              <option>Gợi í tên khách hàng</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
@@ -53,7 +53,7 @@
           </div>
           <div class="col-sm-4">
             <select class="form-control">
-              <option>1</option>
+              <option>Gợi í địa chỉ</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
@@ -62,13 +62,26 @@
           </div>
         </div>
         <div class="form-group">
-          <label class="col-sm-1 control-label">Mã Sản Phẩm</label>
-          <div class="col-sm-7">
+          <label class="col-sm-1 control-label">Tên Hàng</label>
+          <div class="col-sm-3">
+            <input name="nameproduct" type="text" class="form-control">
+          </div>
+          <label class="col-sm-1 control-label">Mã Hàng</label>
+          <div class="col-sm-3">
             <input name="code" type="text" class="form-control">
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-2">
             <select class="form-control">
-              <option>1</option>
+              <option>Gợi í tên hàng</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="col-sm-2">
+            <select class="form-control">
+              <option>Gợi í mã hàng</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
@@ -83,7 +96,22 @@
           </div>
           <div class="col-sm-4">
             <select class="form-control">
-              <option>1</option>
+              <option>Gợi í kích cỡ</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-1 control-label">Màu sắc</label>
+          <div class="col-sm-7">
+            <input name="color" type="text" class="form-control">
+          </div>
+          <div class="col-sm-4">
+            <select class="form-control">
+              <option>Gợi í màu sắc</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
@@ -94,11 +122,11 @@
         <div class="form-group">
           <label class="col-sm-1 control-label">Số Lượng</label>
           <div class="col-sm-7">
-            <input name="quantity" type="number" class="form-control">
+            <input id="soluong_new" name="quantity" type="number" class="form-control" value="1">
           </div>
           <div class="col-sm-4">
             <select class="form-control">
-              <option>1</option>
+              <option>Gợi í số lượng</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
@@ -107,13 +135,30 @@
           </div>
         </div>
         <div class="form-group">
-          <label class="col-sm-1 control-label">Tiền Cọc</label>
-          <div class="col-sm-7">
-            <input name="deposit" type="number" class="form-control" value="<?php echo $a;?>">
+          <label class="col-sm-1 control-label">Giá bán</label>
+          <div class="col-sm-2">
+            <input id="giaban_new" name="total" type="number" class="form-control" value="<?php echo $a;?>">
+          </div>
+          <div class="col-sm-5">
+            <div class="col-sm-3">
+              <label class="abc">=</label>
+              <input id="giaweb_new" type="number" class="xyz form-control" value="" placeholder="Giá web">
+            </div>
+            <div class="col-sm-3">
+              <label class="abc">X</label>
+              <input id="tigia_new" type="number" class="xyz form-control" value="3.5" placeholder="Tỉ giá">
+            </div>
+            <div class="col-sm-3">
+              <label class="abc">+</label>
+              <input id="lai_new" type="number" class="xyz form-control" value="" placeholder="Lãi">
+            </div>
+            <div class="col-sm-3">
+              <button id="tinhgiaban_new" class="btn btn-space btn-primary btn-lg">Tính</button>
+            </div>
           </div>
           <div class="col-sm-4">
             <select class="form-control">
-              <option>1</option>
+              <option>Gợi í giá bán</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
@@ -122,13 +167,13 @@
           </div>
         </div>
         <div class="form-group">
-          <label class="col-sm-1 control-label">Tổng Tiền</label>
+          <label class="col-sm-1 control-label">Giảm</label>
           <div class="col-sm-7">
-            <input name="total" type="number" class="form-control" value="<?php echo $a;?>">
+            <input id="giagiam_new" name="sale" type="number" class="form-control" value="<?php echo $a;?>">
           </div>
           <div class="col-sm-4">
             <select class="form-control">
-              <option>1</option>
+              <option>Gợi í giá giảm</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
@@ -137,13 +182,13 @@
           </div>
         </div>
         <div class="form-group">
-          <label class="col-sm-1 control-label">Tiền Khuyến Mại</label>
+          <label class="col-sm-1 control-label">Cọc</label>
           <div class="col-sm-7">
-            <input name="sale" type="number" class="form-control" value="<?php echo $a;?>">
+            <input id="coc_new" name="deposit" type="number" class="form-control" value="<?php echo $a;?>">
           </div>
           <div class="col-sm-4">
             <select class="form-control">
-              <option>1</option>
+              <option>Gợi í giá cọc</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
@@ -152,18 +197,16 @@
           </div>
         </div>
         <div class="form-group">
-          <label class="col-sm-1 control-label">Tiền Chốt Đơn</label>
-          <div class="col-sm-7">
-            <input name="alltotal" type="number" class="form-control" value="<?php echo $a;?>">
+          <label class="col-sm-1 control-label">Tổng tiền</label>
+          <div class="col-sm-5">
+            <input id="tongtien_new" name="alltotal" type="number" class="form-control" value="<?php echo $a;?>">
+          </div>
+          <div class="col-sm-2">
+            <button id="tinhtongtien_new" class="btn btn-space btn-primary btn-lg">Tính</button>
           </div>
           <div class="col-sm-4">
-            <select class="form-control">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
+              <label style="width: 30%;float: left;text-align: left;" class="control-label">Khách nợ</label>
+              <input id="conthieu_new" style="width: 70%;float: left;" type="number" class="form-control" readonly>
           </div>
         </div>
         <div class="form-group">
@@ -173,7 +216,7 @@
           </div>
           <div class="col-sm-4">
             <select class="form-control">
-              <option>1</option>
+              <option>Gợi í ghi chú</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
@@ -182,7 +225,7 @@
           </div>
         </div>
         <div class="form-group">
-          <label class="col-sm-1 control-label">Phương thức vận chuyển</label>
+          <label class="col-sm-1 control-label">Vận chuyển</label>
           <div class="col-sm-3">
             <div class="be-radio has-success inline">
               <input type="radio" name="shopee_cod" id="radinsucc" value="0">

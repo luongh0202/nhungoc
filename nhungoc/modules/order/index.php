@@ -5,13 +5,11 @@
 ?>
 
 <!--Responsive table-->
-<div class="col-sm-12">
+<div class="col-sm-12 table_all">
   <div class="panel panel-default panel-table">
-    <div class="panel-heading">Danh sách đơn hàng
-      <div class="tools"><span class="icon mdi mdi-download"></span><span class="icon mdi mdi-more-vert"></span></div>
-    </div>
+    <div class="panel-heading">Danh sách tất cả đơn hàng</div>
     <div class="panel-body">
-      <table class="table table-striped table-hover">
+      <table class="table table-hover table-bordered table12">
         <thead>
           <tr>
             <th style="width:1%;">Thứ tự</th> <!-- 1 -->
@@ -74,7 +72,7 @@
                 <td><?php echo $admin->code; ?></td> <!-- 3 -->
                 <td><?php echo $admin->size; ?></td> <!-- 4 -->
                 <td><?php echo $admin->color; ?></td> <!-- 5 -->
-                <td><?php echo $admin->quantity; ?></td> <!-- 6 -->
+                <td><?php ?></td> <!-- 6 -->
                 <td><?php echo $admin->deposit; ?></td> <!-- 8 -->
                 <td><?php echo $admin->total; ?></td> <!-- 9 -->
                 <td><?php echo $admin->sale; ?></td> <!-- 10 -->

@@ -16,7 +16,9 @@ include 'common/connect_db.php';
     <link rel="stylesheet" type="text/css" href="public/assets/lib/jquery.vectormap/jquery-jvectormap-1.2.2.css"/>
     <link rel="stylesheet" type="text/css" href="public/assets/lib/jqvmap/jqvmap.min.css"/>
     <link rel="stylesheet" type="text/css" href="public/assets/lib/datetimepicker/css/bootstrap-datetimepicker.min.css"/>
+    <link rel="stylesheet" type="text/css" href="public/assets/datatable/datatables.min.css"/>
     <link rel="stylesheet" href="public/assets/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="public/assets/css/my.css" type="text/css"/>
   </head>
 <body>
   <div class="be-wrapper be-fixed-sidebar">
@@ -102,10 +104,12 @@ include 'common/connect_db.php';
     <script src="public/assets/js/app-dashboard.js" type="text/javascript"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-      	//initialize the javascript
-      	App.init();
-      	App.dashboard();
+        //initialize the javascript
+        App.init();
+        App.dashboard();
       });
     </script>
+    <script src="public/assets/datatable/datatables.min.js" type="text/javascript"></script>
+    <script src="public/assets/js/my.js" type="text/javascript"></script>
   </body>
 </html>
