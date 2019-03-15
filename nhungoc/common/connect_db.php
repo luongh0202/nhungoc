@@ -1,4 +1,5 @@
 <?php
+
 $servername = "localhost";
 $username = "root";     // Tài khoản mặc định
 $password = "";         // Mật khẩu mặc định để trống
